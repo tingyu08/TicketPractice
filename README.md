@@ -1,26 +1,31 @@
-# TicketPlus 自動搶票程式
+# 🎟️ Get Ticket Practicing 練習程式
 
-這是一個基於 **Python + Selenium** 的自動化搶票腳本，可以同時開啟多個瀏覽器分身，自動登入並嘗試購買指定票券。  
-
----
-
-## 功能
-- 自動開啟多個瀏覽器分身搶票
-- 自動登入帳號密碼
-- 自動點擊票數 + 下一步
-- 自動檢測「更新票數」按鈕並刷新
-- 瀏覽器最大化，並關閉圖片載入以提升速度
+這是一個基於 **Python + Selenium** 的練習用搶票腳本，專門針對  
+[`https://ticket-training.onrender.com/`](https://ticket-training.onrender.com/) 練習網站，  
+自動完成從倒數 → 點擊購票 → 選區域 → 選張數 → 填寫驗證碼 → 完成搶票的流程。  
 
 ---
 
-## 環境需求
+## 📌 功能
+- 自動啟動瀏覽器並打開指定練習網站
+- 自動填入倒數時間並開始
+- 自動點擊「購票」按鈕
+- 自動選擇區域與票數
+- 自動勾選同意條款
+- 自動讀取驗證碼（使用 `data-answer` 屬性模擬）
+- 自動送出表單並顯示搶票耗時與最佳紀錄
+- 支援多次循環測試
+
+---
+
+## 🛠 環境需求
 - Python 3.8+
 - Google Chrome
-- ChromeDriver（自動由 `webdriver_manager` 安裝）
+- ChromeDriver（由 `webdriver_manager` 自動安裝）
 
 ---
 
-## 安裝
+## 📦 安裝
 1. 下載專案程式碼
 2. 安裝必要套件：
    ```bash
